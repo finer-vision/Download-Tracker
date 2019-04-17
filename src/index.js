@@ -48,4 +48,4 @@ const trackDownload = (fileName = '') => {
 
 DownloadTracker().autoAddListeners();
 
-export default trackDownload;
+window.trackDownload = trackDownload;
