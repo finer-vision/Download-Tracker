@@ -1,6 +1,6 @@
 {
   "name": "fv-analytics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Track clicks of download links via Google Analytics",
   "main": "build/index.js",
   "scripts": {
