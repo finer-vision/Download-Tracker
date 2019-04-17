@@ -2,7 +2,9 @@
 
 Track clicks of download links via Google Analytics.
 
-!!! Note: you will need to have Google Analytics installed for this package to work. !!!
+### Pre-Requisites
+- You will need to have Google Analytics installed for this package to work.
+- Files will need to be served from a directory of `/downloads`.
 
 ### Installation
 
