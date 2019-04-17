@@ -32,8 +32,18 @@ const DownloadTracker = () => {
     }
 };
 
-const trackDownload = (fileName = null) => {
-    fileName && DownloadTracker().isReady() && ga('send', 'event', 'File Downloads', 'download', fileName);
+const trackDownload = (fileName = '') => {
+    const fileNameType = typeof fileName;
+    if (fileNameType !== 'string') {
+        console.error(`trackDownload -> fileName: Expected type of string, but received a ${fileNameType}`);
+    }
+
+    if (!fileName) {
+        console.error('trackDownload -> fileName: File name not supplied');
+    }
+
+    DownloadTracker().isReady() &&
+    ga('send', 'event', 'File Downloads', 'download', fileName);
 };
 
 DownloadTracker().autoAddListeners();
