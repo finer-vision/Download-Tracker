@@ -27,7 +27,7 @@ To start tracking downloads, add the following class name to the elements:
 For dynamic elements that get added to the page, you will need to add these:
 
 ```js
-import {trackDownload} from "fv-analytics";
+import trackDownload from "fv-analytics";
 
 trackDownload('file.text');
 ```
