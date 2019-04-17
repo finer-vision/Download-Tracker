@@ -1,5 +1,5 @@
 {
-  "name": "fv-download-tracker",
+  "name": "fv-download-analytics",
   "version": "0.0.1",
   "description": "Track clicks of download links via Google Analytics",
   "main": "build/index.js",

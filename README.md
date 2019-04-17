@@ -7,7 +7,7 @@ Track clicks of download links via Google Analytics.
 ### Installation
 
 ```bash
-npm add fv-download-tracker
+npm add fv-download-analytics
 ```
 
 ### Usage
@@ -15,7 +15,7 @@ npm add fv-download-tracker
 Add this to your global app.js file.
 
 ```bash
-import "fv-download-tracker";
+import "fv-download-analytics";
 ```
 
 To start tracking downloads, add the following class name to the elements:
@@ -27,7 +27,7 @@ To start tracking downloads, add the following class name to the elements:
 For dynamic elements that get added to the page, you will need to add these:
 
 ```js
-import {trackDownload} from "fv-download-tracker";
+import {trackDownload} from "fv-download-analytics";
 
 trackDownload('file.text');
 ```
