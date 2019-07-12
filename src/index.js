@@ -43,8 +43,7 @@ export const trackDownload = (fileName = '') => {
         console.error('trackDownload -> fileName: File name not supplied');
     }
 
-    DownloadTracker().isReady() &&
-    ga('send', 'event', 'File Downloads', 'download', fileName);
+    DownloadTracker().isReady() && ga('send', 'event', 'File Downloads', 'download', fileName);
 };
 
 DownloadTracker().autoAddListeners();
