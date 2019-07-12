@@ -33,7 +33,7 @@ const DownloadTracker = () => {
     }
 };
 
-const trackDownload = (fileName = '') => {
+export const trackDownload = (fileName = '') => {
     const fileNameType = typeof fileName;
     if (fileNameType !== 'string') {
         console.error(`trackDownload -> fileName: Expected type of string, but received a ${fileNameType}`);
@@ -48,5 +48,3 @@ const trackDownload = (fileName = '') => {
 };
 
 DownloadTracker().autoAddListeners();
-
-window.trackDownload = trackDownload;
