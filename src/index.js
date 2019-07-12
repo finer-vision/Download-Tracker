@@ -22,12 +22,13 @@ const DownloadTracker = () => {
             return isReady;
         },
         autoAddListeners: () => {
-            document.querySelectorAll('.download').forEach(downloadTrigger => {
+            const downloadTriggers = document.querySelectorAll('.download');
+            for (let i = 0; i < downloadTriggers.length; i++) {
+                const downloadTrigger = downloadTriggers[i];
                 const href = downloadTrigger.getAttribute('href') || false;
                 const name = getFileName(href);
-
                 name && downloadTrigger.addEventListener('click', () => trackDownload(name));
-            });
+            }
         },
     }
 };
